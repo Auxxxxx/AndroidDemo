@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/item_employees_list"
+            android:title="@string/employees" />
+        <item
+            android:id="@+id/item_operations_report"
+            android:title="@string/operations_report" />
+        <item
+            android:id="@+id/item_time_report"
+            android:title="@string/time_report" />
+        <item
+            android:id="@+id/item_settings"
+            android:title="Настройки?" />
+    </group>
+</menu>

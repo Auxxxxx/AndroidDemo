@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MDFactory</string>
+    <string name="enter_system_card_heading_text">ВХОД В СИСТЕМУ</string>
+    <string name="login_text">Логин</string>
+    <string name="password_text">Пароль</string>
+    <string name="i_am_admin_text">Я АДМИНИСТРАТОР</string>
+    <string name="start_working_text"><![CDATA[Приступить к работе →]]></string>
+    <string name="ok">Подтвердить</string>
+    <string name="start_shift">Начать смену</string>
+    <string name="start_batch">Отсканировать\nпутевой лист</string>
+    <string name="done">готово</string>
+    <string name="add">Добавить</string>
+    <string name="password">Пароль</string>
+    <string name="name">ФИО</string>
+    <string name="save">сохранить</string>
+    <string name="employees">работники</string>
+    <string name="operations_report">отчет по операциям</string>
+    <string name="time_report">отчет по времени</string>
+    <string name="start_break">Выйти на перерыв</string>
+    <string name="postpone">Отложить задачу</string>
+    <string name="continue_shift">Продолжить смену</string>
+</resources>

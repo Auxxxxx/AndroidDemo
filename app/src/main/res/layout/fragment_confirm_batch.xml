@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ConfirmBatchFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_active_batch_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CV_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_toStartOf="@id/BTN_scan"
+            app:cardBackgroundColor="@color/light_blue200"
+            app:cardCornerRadius="13dp">
+
+            <EditText
+                android:id="@+id/ET_itinerary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:textSize="26dp" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/BTN_scan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/scan_icon" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/BTN_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_active_batch_code"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/andada_pro_bold"
+        android:text="@string/start_working_text"
+        android:textAlignment="center" />
+
+</RelativeLayout>

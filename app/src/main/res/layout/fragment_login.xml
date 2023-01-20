@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CV_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:cardCornerRadius="13dp"
+            app:cardBackgroundColor="@color/light_blue200">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TV_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/andada_pro_medium"
+                    android:text="@string/enter_system_card_heading_text"
+                    android:textSize="24dp"
+                    android:theme="@style/MyText" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TV_heading"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/ET_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="@string/login_text"
+                        android:inputType="textVisiblePassword|textNoSuggestions"
+                        android:padding="15dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CV_login"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/ET_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="@string/password_text"
+                        android:inputType="textPassword"
+                        android:padding="15dp" />
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/BTN_as_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CV_password"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:paddingVertical="20dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/andada_pro_medium"
+                    android:textColor="@color/dark_blue"
+                    android:text="@string/i_am_admin_text"
+                    android:backgroundTint="@color/light_blue200"
+                    android:stateListAnimator="@null"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/BTN_main_start"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/andada_pro_bold"
+            android:textAlignment="center"
+            android:text="@string/start_working_text"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

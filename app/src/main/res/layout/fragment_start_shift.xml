@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.StartShiftFragment">
+
+    <ImageButton
+        android:id="@+id/IB_start_shift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/background_light_blue"
+        android:padding="290dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/selector_start_shift" />
+
+    <TextView
+        android:id="@+id/TV_start_shift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:layout_alignBottom="@id/IB_start_shift"
+        android:layout_centerHorizontal="true"
+        android:textSize="26dp"
+        android:theme="@style/MyText" />
+
+</RelativeLayout>
